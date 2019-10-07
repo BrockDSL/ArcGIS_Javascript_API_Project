@@ -1,4 +1,4 @@
-![DSL Logo][dsllogo] ![Logo][GISLOGO = 100x100]
+![DSL Logo][dsllogo] ![Logo][GISLOGO = 100x]
 
 
 # Title
