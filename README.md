@@ -1,4 +1,5 @@
-![DSL Logo][dsllogo] ![Logo][GISLOGO]
+![DSL Logo][dsllogo] 
+![Logo][GISLOGO]
 
 
 # Title
