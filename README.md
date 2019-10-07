@@ -1,4 +1,4 @@
-![DSL Logo][dsllogo]
+![DSL Logo][dsllogo] ![Logo][GISLOGO]
 
 
 # Title
@@ -27,3 +27,4 @@ Content
 <!--- Please use reference style images so that it is easier to update pictures later --->
 
 [dsllogo]: dsl_logo.png
+[GISLOGO]: logo.png
