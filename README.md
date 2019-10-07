@@ -1,4 +1,4 @@
-![DSL Logo][dsllogo] 
+![DSL Logo][dsllogo]\
 ![Logo][GISLOGO]
 
 
