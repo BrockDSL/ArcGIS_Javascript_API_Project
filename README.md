@@ -4,16 +4,19 @@
 # Exploring the ARCGIS JavaScript API
 
 ### Introduction
+
 The Goal of The Project will be to Provide Insight into the use and applications of the ARCGIS JavaScript API. The main focus of the tutorial wil be applying the API inside of a simple Web App. The code editor and run-time envrioment that the user will use is CodePen which will allow them to write code and immediatley see the resulting web app without any unnecessary inconveniences of learning how to deploy or test the code snippets.
 
 ### Setup Procedures
 
 1. Navigate to https://codepen.io/ and **Sign up** for a free account
+
 >**Note**: You can sign up with facebook, Email, or even Github to easily have your code written in CodePen be merged to a repository.
 
 ![][Logo1]
 
-2.Once Logged in create a new **Pen(document)** by navigating to the **Top left** and clicking Pen
+2. Once Logged in create a new **Pen(document)** by navigating to the **Top left** and clicking Pen
+
 >**Note**: CodePen offers the ability to also create Projects, Posts, and Collects that all can be added to a Personal Dashboard
 
 ![][Logo2]
