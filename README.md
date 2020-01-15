@@ -38,8 +38,12 @@ The Goal of The Project will be to Provide Insight into the use and applications
 ![][Logo5]
 
 2 . **Add a BaseMap Selection Widget**
-
+ 
+ ![][Logo6]
+ 
 3 . **Draw Graphics**
+
+![][Logo7]
 
 4 . **Add Hosted Layers to Map**
 
@@ -60,6 +64,8 @@ The Goal of The Project will be to Provide Insight into the use and applications
 [Logo3]: LOGO3.png
 [Logo4]: LOGO4.png
 [Logo5]: LOGO5.png
+[Logo6]: LOGO6.png
+[Logo7]: LOGO7.png
 
 
 
