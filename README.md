@@ -1,5 +1,5 @@
 ![DSL Logo][dsllogo]\
-![Logo][GISLOGO]
+![Logo][GISLOGO = 250x]
 
 
  
