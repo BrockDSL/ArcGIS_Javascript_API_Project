@@ -1,5 +1,7 @@
 ![DSL Logo][dsllogo]\
 
+<img src="esrijs.png" height="100" width="100"/>
+
 # Exploring the ARCGIS JavaScript API
 
 ### Introduction
