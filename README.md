@@ -4,7 +4,7 @@
 # Exploring the ARCGIS JavaScript API
 
 ### Introduction
-The Goal of The Project will be to Provide Insight into the use and applications of the ARCGIS JavaScript API. The main focus of the tutorial wil be applying the API inside of web applications. The code editor and run-time envrioment that the user will use is CodePen which will allow them to write code and immediatley see the resulting web app without any unnecessary inconvenience.
+The Goal of The Project will be to Provide Insight into the use and applications of the ARCGIS JavaScript API. The main focus of the tutorial wil be applying the API inside of a simple Web App. The code editor and run-time envrioment that the user will use is CodePen which will allow them to write code and immediatley see the resulting web app without any unnecessary inconveniences of learning how to deploy or test the code snippets.
 
 ### Setup Procedures
 
@@ -25,6 +25,11 @@ The Goal of The Project will be to Provide Insight into the use and applications
 4. If you wish to change the Layout; do so by clicking **Change View** on the Top right and selecting an appropriate Layout
 
 ![][Logo4]
+
+### Outline of API Features to be explored 
+
+>**Note**: The tutorial will highlight a small subset of the APIs countless features to get the user interested to explorer on their own 
+
 
 
 
