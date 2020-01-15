@@ -9,23 +9,23 @@ The Goal of The Project will be to Provide Insight into the use and applications
 
 ### Setup Procedures
 
-1. Navigate to https://codepen.io/ and **Sign up** for a free account
+1 . Navigate to https://codepen.io/ and **Sign up** for a free account
 
 >**Note**: You can sign up with facebook, Email, or even Github to easily have your code written in CodePen be merged to a repository.
 
 ![][Logo1]
 
-2. Once Logged in create a new **Pen(document)** by navigating to the **Top left** and clicking Pen
+2 . Once Logged in create a new **Pen(document)** by navigating to the **Top left** and clicking Pen
 
 >**Note**: CodePen offers the ability to also create Projects, Posts, and Collects that all can be added to a Personal Dashboard
 
 ![][Logo2]
 
-3. CodePen gives the ability to write HTML, CSS, and JavaScript all on the same page. All output will be **Automatically generated in the light gray area**
+3 . CodePen gives the ability to write HTML, CSS, and JavaScript all on the same page. All output will be **Automatically generated in the light gray area**
 
 ![][Logo3]
 
-4. If you wish to change the Layout; do so by clicking **Change View** on the Top right and selecting an appropriate Layout
+4 . If you wish to change the Layout; do so by clicking **Change View** on the Top right and selecting an appropriate Layout
 
 ![][Logo4]
 
@@ -33,9 +33,19 @@ The Goal of The Project will be to Provide Insight into the use and applications
 
 >**Note**: The tutorial will highlight a small subset of the APIs countless features to get the user interested to explorer on their own 
 
-1. **Create Simple 3D SceneView of Brock University**
+1 . **Create Simple 3D SceneView of Brock University**
 
 ![][Logo5]
+
+2 . **Add a BaseMap Selection Widget**
+
+3 . **Draw Graphics**
+
+4 . **Add Hosted Layers to Map**
+
+5 . **Display ArcGis Pro Maps**
+
+6 . **Get routes and Directions**
 
 
 
