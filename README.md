@@ -1,10 +1,5 @@
 ![DSL Logo][dsllogo]\
-![Logo][GISLOGO]
-
-img[src*="#thumbnail"] {
-   width:150px;
-   height:100px;
-}
+<img src="esrijs.png" width ="150" height="150/>
  
  
 
@@ -19,4 +14,4 @@ img[src*="#thumbnail"] {
 <!--- Please use reference style images so that it is easier to update pictures later --->
 
 [dsllogo]: dsl_logo.png
-[GISLOGO]: esrijs.png#thumbnail
+[GISLOGO]: esrijs.png
