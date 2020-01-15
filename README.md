@@ -10,14 +10,17 @@ The Goal of The Project will be to Provide Insight into the use and applications
 
 1. Navigate to https://codepen.io/ and Sign up for a free account
 >**Note**: You can sign up with facebook, Email, or even Github to easily have your code written in CodePen be merged to a repository.
-![CodePen HomePage][Logo1]\
+
+![CodePen HomePage][Logo1]
 
 2.Once Logged in create a new Pen(document) by navigating to the top left and clicking Pen
 >**Note**: CodePen offers the ability to also create Projects, Posts, and Collects that all can be added to a Personal Dashboard
-![Logged In][Logo2]\
+
+![Logged In][Logo2]
 
 3. CodePen gives the ability to write HTML, CSS, and JavaScript all on the same page. All output will be automatically generated in the light gray area
-![Pen][Logo3]\
+
+![Pen][Logo3]
 
 4. 
 
@@ -28,9 +31,9 @@ The Goal of The Project will be to Provide Insight into the use and applications
 <!--- Please use reference style images so that it is easier to update pictures later --->
 
 [dsllogo]: dsl_logo.png
-[Logo1]:LOGO1.PNG
-[Logo2]:LOGO2.PNG
-[Logo3]:LOGO3.PNG
+[Logo1]: LOGO1.PNG
+[Logo2]: LOGO2.PNG
+[Logo3]: LOGO3.PNG
 
 
 
