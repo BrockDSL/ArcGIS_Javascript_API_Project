@@ -1,5 +1,5 @@
 ![DSL Logo][dsllogo]\
-![Logo][GISLOGO = 250x]
+![Logo][GISLOGO]{:height="50%" width="50%"}
 
 
  
