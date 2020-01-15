@@ -45,11 +45,10 @@ The Goal of The Project will be to Provide Insight into the use and applications
 
 ![][Logo7]
 
-4 . **Add Hosted Layers to Map**
+4 . **Get routes and Directions**
 
 5 . **Display ArcGis Pro Maps**
 
-6 . **Get routes and Directions**
 
 
 
