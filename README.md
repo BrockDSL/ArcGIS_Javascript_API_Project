@@ -47,6 +47,8 @@ The Goal of The Project will be to Provide Insight into the use and applications
 
 4 . **Get routes and Directions**
 
+![][Logo8]
+
 5 . **Display ArcGis Pro Maps**
 
 
