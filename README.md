@@ -33,6 +33,10 @@ The Goal of The Project will be to Provide Insight into the use and applications
 
 >**Note**: The tutorial will highlight a small subset of the APIs countless features to get the user interested to explorer on their own 
 
+1. **Create Simple 3D SceneView of Brock University**
+
+![][Logo5]
+
 
 
 
@@ -45,6 +49,7 @@ The Goal of The Project will be to Provide Insight into the use and applications
 [Logo2]: LOGO2.png
 [Logo3]: LOGO3.png
 [Logo4]: LOGO4.png
+[Logo5]: LOGO5.png
 
 
 
