@@ -35,22 +35,27 @@ The Goal of The Project will be to Provide Insight into the use and applications
 >**Note**: The tutorial will highlight a small subset of the APIs countless features to get the user interested to explorer on their own 
 
 1 . **Create Simple 3D SceneView of Brock University**
+>**Note**: Finished By 01/24/20
 
 ![][Logo5]
 
 2 . **Add a BaseMap Selection Widget**
+>**Note**: Finished By 01/31/20
  
  ![][Logo6]
  
 3 . **Draw Graphics**
+>**Note**: Finished By 02/07/20
 
 ![][Logo7]
 
 4 . **Get routes and Directions**
+>**Note**: Finished By 02/14/20
 
 ![][Logo8]
 
 5 . **Display ArcGis Pro Maps**
+>**Note**: Finished By 02/21/20
 
 ![][Logo9]
 
