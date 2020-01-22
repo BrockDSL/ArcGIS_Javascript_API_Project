@@ -35,7 +35,7 @@ First were are going to setup a virtual enviroment that will display and update 
 
   ![][Logo3]
 
-  4 . If you wish to change the Layout; do so by clicking **Change View** on the Top right and selecting an appropriate Layout
+  4 . If you wish to change the Layout; do so by clicking **Change View** on the Top right and selecting an appropriate Layout. If not we are **Ready to Start**
 
   ![][Logo4]
 
