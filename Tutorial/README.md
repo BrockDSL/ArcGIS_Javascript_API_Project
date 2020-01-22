@@ -5,9 +5,9 @@
 
 ### Introduction 
 
-ArcGIS is a platform that allows organizations and Individuals to create, manage, and analyze spatial data. It contains desktop and mobile applications, server components and wide variety of developer tools. The platofrm can be deployed on the cloud or through their own hosted option ArcGIS Online.This tuturial is about the ArcGIS API for JavaScript which is lightweight option to embed maps and ArcGIS features.It also allows one to embed their own or others hosted ArcGIS maps.
+ArcGIS is a platform that allows organizations and Individuals to create, manage, and analyze spatial data. It contains desktop and mobile applications, server components and a wide variety of developer tools. The platform can be deployed on the cloud or through their own hosted option ArcGIS Online.This tuturial is about the ArcGIS API for JavaScript which is a lightweight option to embed maps and ArcGIS features.It also allows one to embed their own or others hosted ArcGIS maps.
 
-The tutrial will walk you through Implementing the following features:
+The tutorial will walk you through Implementing the following features:
 
   1. Embedding a simple 2D or 3D map of Brock University
   2. Learning how to add widgets by creating a basemap selector to change the map theme
