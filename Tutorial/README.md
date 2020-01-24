@@ -43,9 +43,30 @@ First were are going to setup a virtual enviroment that will display and update 
 ### 2D and 3D Maps
 
 To start off with out mapping application we will need to add in a **Map** that contains a **basemap** that controls the theme. ArcGis offers a wide variety of default basemaps. Once we have embedded a map we must decide if we want to use a **MapView** for 2D maps or **SceneView** for 3D maps; for the purpose of this tutorial we will be using a MapView.
-
-
-
+  
+  1. . First we need to setup the HTML page by inserting the following boilerplate into the HTML window inside codepen
+  
+  ```html
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+      <title>ArcGIS JavaScript Tutorials: Create a JavaScript starter app</title>
+      <style>
+        html, body, #viewDiv {
+          padding: 0;
+          margin: 0;
+          height: 100%;
+          width: 100%;
+        }
+      </style>
+    </head>
+    <body>
+      <div id="viewDiv"></div>
+    </body>
+  </html>
+  ```
 
 
 <!--- Please use reference style images so that it is easier to update pictures later --->
