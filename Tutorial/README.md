@@ -52,7 +52,7 @@ To start off with out mapping application we will need to add in a **Map** that 
     <head>
       <meta charset="utf-8">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
-      <title>ArcGIS JavaScript Tutorials: Create a JavaScript starter app</title>
+      <title>DSL Tutorial Web App</title>
       <style>
         html, body, #viewDiv {
           padding: 0;
