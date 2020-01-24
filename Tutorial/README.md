@@ -44,7 +44,7 @@ First were are going to setup a virtual enviroment that will display and update 
 
 To start off with our mapping application we will need to add in a **Map** that contains a **basemap** that controls the theme. ArcGIS offers a wide variety of default basemaps. Once we have embedded a map we must decide if we want to use a **MapView** for 2D maps or **SceneView** for 3D maps; for the purpose of this tutorial we will be using a MapView.
   
-  1. . First we need to setup the HTML page by inserting the following boilerplate into the HTML window inside codepen
+  1. . First we need to setup the HTML page by inserting the following boilerplate into the HTML window inside codepen. This will act as a standard template for ArcGIS web apps and everything you will be completing in this tutorial.
   
   ```html
   <!DOCTYPE html>
@@ -68,14 +68,14 @@ To start off with our mapping application we will need to add in a **Map** that 
   </html>
   ```
   
- 2 . Now we need to add the links to the esris JavaScript and CSS inside the **head** tags 
+ 2 . Now we need to add the links to the esris JavaScript and CSS inside the **head** tags. These references link code written by esri that will apply some styles and functionality to everything for us. You can add styles in the future to better suite your application.
  
   ```html
   <link rel="stylesheet" href="https://js.arcgis.com/4.13/esri/css/main.css">
   <script src="https://js.arcgis.com/4.13/"></script>
   ```
 
-3 . Next is defining and generating the 2D **MapView**. The main components that add customization will be the coordinates, basemap and zoom. If you notice as well we are going to reference the previous **div ID** as the contianer for the map. Add the following inside the **head** tags as well.
+3 . Next is defining and generating the 2D **MapView**. To change the map location you can change the center coordinates and change the zoom levels, another option is changing the theme which is as easy as adjusting the basemap value for any of the follwing defaults provided by esri https://developers.arcgis.com/javascript/3/jsapi/esri.basemaps-amd.html. If you notice as well we are going to reference the previous **div ID** as the contianer for the map. Add the following inside the **head** tags.
   
   ```html
    <script>
