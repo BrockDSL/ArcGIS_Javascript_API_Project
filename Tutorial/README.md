@@ -67,7 +67,37 @@ To start off with out mapping application we will need to add in a **Map** that 
     </body>
   </html>
   ```
+  
+ 2 . Now we need to add the links to the esris JavaScript and CSS inside the **head** tags 
+ 
+  ```html
+  <link rel="stylesheet" href="https://js.arcgis.com/4.13/esri/css/main.css">
+  <script src="https://js.arcgis.com/4.13/"></script>
+  ```
 
+3 . Next is defining and generating the 2D **MapView**. The main components that add customization will be the coordinates, basemap and zoom. If you notice as well we are going to refrence the previous **div** ID as the contianer for the map. Add the following inside the **head** tags as well.
+  
+  ```html
+   <script>
+    require([
+        "esri/Map",
+        "esri/views/MapView"
+      ], function(Map, MapView) {
+
+      var map = new Map({
+        basemap: "streets-navigation-vector"
+      });
+
+      var view = new MapView({
+        container: "viewDiv",
+        map: map,
+        center: [-79.2477, 43.1176], // longitude, latitude
+        zoom: 17
+      });
+    });
+   </script>
+  ```
+  Now all you have to do is click **Run** and see your first Web Application come to life
 
 <!--- Please use reference style images so that it is easier to update pictures later --->
 [dsllogo]: dsl_logo.png
