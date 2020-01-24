@@ -100,6 +100,10 @@ To start off with our mapping application we will need to add in a **Map** that 
   Now all you have to do is click **Run** and see your first Web Application come to life. Your Web App should look like this.
   
    ![][Logo5]
+   
+ ### BaseMap Selector Widget
+ 
+ 
 
 <!--- Please use reference style images so that it is easier to update pictures later --->
 [dsllogo]: dsl_logo.png
