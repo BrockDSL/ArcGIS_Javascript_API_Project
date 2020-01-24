@@ -92,7 +92,7 @@ To start off with our mapping application we will need to add in a **Map** that 
         container: "viewDiv",
         map: map,
         center: [-79.2477, 43.1176], // longitude, latitude
-        zoom: 17
+        zoom: 15
       });
     });
    </script>
