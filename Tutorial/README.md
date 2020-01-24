@@ -97,7 +97,9 @@ To start off with our mapping application we will need to add in a **Map** that 
     });
    </script>
   ```
-  Now all you have to do is click **Run** and see your first Web Application come to life
+  Now all you have to do is click **Run** and see your first Web Application come to life. Your Web App should look like this.
+  
+   ![][Logo5]
 
 <!--- Please use reference style images so that it is easier to update pictures later --->
 [dsllogo]: dsl_logo.png
@@ -105,3 +107,4 @@ To start off with our mapping application we will need to add in a **Map** that 
 [Logo2]: LOGO2.png
 [Logo3]: LOGO3.png
 [Logo4]: LOGO4.png
+[Logo5]: LOGO5.png
