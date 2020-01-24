@@ -34,8 +34,9 @@ The Goal of The Project will be to Provide Insight into the use and applications
 
 >**Note**: The tutorial will highlight a small subset of the APIs countless features to get the user interested to explorer on their own 
 
-1 . **Create Simple 3D SceneView of Brock University**
+1 . **Create Simple 2D SceneView of Brock University**
 >**Note**: Finished By 01/24/20
+>**Update**: Completed
 
 ![][Logo5]
 
