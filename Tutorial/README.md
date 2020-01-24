@@ -42,7 +42,7 @@ First were are going to setup a virtual enviroment that will display and update 
 
 ### 2D and 3D Maps
 
-To start off with out mapping application we will need to add in a **Map** that contains a **basemap** that controls the theme. ArcGis offers a wide variety of default basemaps. Once we have embedded a map we must decide if we want to use a **MapView** for 2D maps or **SceneView** for 3D maps; for the purpose of this tutorial we will be using a MapView.
+To start off with our mapping application we will need to add in a **Map** that contains a **basemap** that controls the theme. ArcGIS offers a wide variety of default basemaps. Once we have embedded a map we must decide if we want to use a **MapView** for 2D maps or **SceneView** for 3D maps; for the purpose of this tutorial we will be using a MapView.
   
   1. . First we need to setup the HTML page by inserting the following boilerplate into the HTML window inside codepen
   
@@ -75,7 +75,7 @@ To start off with out mapping application we will need to add in a **Map** that 
   <script src="https://js.arcgis.com/4.13/"></script>
   ```
 
-3 . Next is defining and generating the 2D **MapView**. The main components that add customization will be the coordinates, basemap and zoom. If you notice as well we are going to refrence the previous **div** ID as the contianer for the map. Add the following inside the **head** tags as well.
+3 . Next is defining and generating the 2D **MapView**. The main components that add customization will be the coordinates, basemap and zoom. If you notice as well we are going to reference the previous **div ID** as the contianer for the map. Add the following inside the **head** tags as well.
   
   ```html
    <script>
