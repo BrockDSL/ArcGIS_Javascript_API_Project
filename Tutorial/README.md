@@ -103,7 +103,45 @@ To start off with our mapping application we will need to add in a **Map** that 
    
  ### BaseMap Selector Widget
  
+ The next goal will be to create and embed a **BaseMap Widget** that will allow the user to select a basemap **Theme** from a number of  options provided by esri. For the current and future sections you will be building off the previous code developed.
  
+  1 . As more functionality is added the project will require more and more esri JavaScript **Packages**. Luckily esri allows you to import them into the script very easily by adjusting the **Function Method Header**. Once this is changed you will write the code to implement the widget inside the **Function within the Script**.
+  
+  You will need to adjust the **Function Header** from this
+  
+  ```html
+   function(Map, MapView)
+  ```
+  To this which adds the **BasemapToggle and BasemapGallery**
+  
+  ```html
+   function(Map, MapView, BasemapToggle, BasemapGallery)
+  ```
+ 
+ 2 . Next step is to initialize the **BasemapGallery** object while setting all of its variables and attributes. The BasemapGallery object asks the user to define our **view object** and our **esri portal source**. Add the following code block inside the **script** tag after the other code.
+ 
+ ```html
+  var basemapGallery = new BasemapGallery({
+    view: view,//remember that our mapview is under the variable view
+    source: {//our source object 
+      portal: {
+        url: "http://www.arcgis.com", //the arcgis url
+        useVectorBasemaps: true //tells the portal to use the vector basemap gallery
+      },
+    } 
+  });
+```
+
+ 3 . The final step is to add our implemented BasemapGallery object to our **view** objects **User Interface**. This will show the widget on our map as part of the UI. Add the follwoing code at the end of the Script 
+ 
+ ```html 
+  view.ui.add(basemapGallery, "top-right");
+ ```
+  If you noticed you can easily change the position of the widget to something for example **bottom-right**
+  
+  Once you save and run your code you will se the widget. Now try selecting the **Streets(Night)** option. It should look something like this
+  
+  ![][Logo6]
 
 <!--- Please use reference style images so that it is easier to update pictures later --->
 [dsllogo]: dsl_logo.png
@@ -112,3 +150,4 @@ To start off with our mapping application we will need to add in a **Map** that 
 [Logo3]: LOGO3.png
 [Logo4]: LOGO4.png
 [Logo5]: LOGO5.png
+[Logo6]: LOGO6.png
