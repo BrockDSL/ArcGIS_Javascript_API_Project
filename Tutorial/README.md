@@ -110,12 +110,20 @@ To start off with our mapping application we will need to add in a **Map** that 
   You will need to adjust the **Function Header** from this
   
   ```html
-   function(Map, MapView)
+     require([
+      "esri/Map",
+      "esri/views/MapView"
+    ], function(Map, MapView)
   ```
   To this which adds the **BasemapToggle and BasemapGallery**
   
   ```html
-   function(Map, MapView, BasemapToggle, BasemapGallery)
+     require([
+      "esri/Map",
+      "esri/views/MapView",
+      "esri/widgets/BasemapToggle",
+      "esri/widgets/BasemapGallery"
+    ], function(Map, MapView, BasemapToggle, BasemapGallery)
   ```
  
  2 . Next step is to initialize the **BasemapGallery** object while setting all of its variables and attributes. The BasemapGallery object asks the user to define our **view object** and our **esri portal source**. Add the following code block inside the **script** tag after the other code.
