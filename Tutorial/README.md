@@ -296,7 +296,7 @@ To start off with our mapping application we will need to add in a **Map** that 
   ![][Logo7]
   
   
-  ##Conclusion 
+  ### Conclusion 
     
    This is just a basic map application that we setup and can be used to be part of a website wtih sizing changes. The ArcGis Javascript API allows you to do so much more such as custom widgets like POV calculators. If you want to learn more go to **https://developers.arcgis.com/javascript/latest/api-reference/**
    
