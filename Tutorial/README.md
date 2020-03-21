@@ -126,7 +126,7 @@ To start off with our mapping application we will need to add in a **Map** that 
     ], function(Map, MapView, BasemapToggle, BasemapGallery)
   ```
  
- 2 . Next step is to initialize the **BasemapGallery** object while setting all of its variables and attributes. The BasemapGallery object asks the user to define our **view object** and our **esri portal source**. Add the following code block inside the **script** tag after the other code.
+ 2 . Next step is to initialize the **BasemapGallery** object while setting all of its variables and attributes. The BasemapGallery object asks the user to define our **view object** and our **esri portal source**. Add the following code block inside the **function** block.
  
  ```html
   var basemapGallery = new BasemapGallery({
@@ -150,6 +150,102 @@ To start off with our mapping application we will need to add in a **Map** that 
   Once you save and run your code you will se the widget. Now try selecting the **Streets(Night)** option. It should look something like this
   
   ![][Logo6]
+  
+  ### Routing 
+  
+  The ArcGSI API also comes equipped with options with providing routing between two or more points. This feature requires compute time from their cloud and will require an ArcGIS online account. For this tutorials purposes you can create a free trial account at **https://developers.arcgis.com/sign-up/**.
+  
+  1 . First you will need to update the require and function headers like in the first step.The packages that need to be added are **Graphic , RouteTask, RouteParameters, and FeatureSet**.
+  
+   From this 
+   ```html
+    require([
+      "esri/Map",
+      "esri/views/MapView",
+      "esri/widgets/BasemapToggle",
+      "esri/widgets/BasemapGallery"
+    ], function(Map, MapView, BasemapToggle, BasemapGallery)
+   ```
+   To this 
+   ```html
+    require([
+    "esri/Map",
+    "esri/views/MapView",
+    "esri/widgets/BasemapToggle",
+    "esri/widgets/BasemapGallery",
+    "esri/Graphic",
+    "esri/tasks/RouteTask",
+    "esri/tasks/support/RouteParameters",
+    "esri/tasks/support/FeatureSet"
+  ], function(Map, MapView, BasemapToggle, BasemapGallery,Graphic, RouteTask, RouteParameters, FeatureSet)
+   ```
+   
+  2 . The next step is create the **RouteTask** Variable which will allow access to the route service. Remember all of the following additions are to be made after your older code inside the function block.
+  
+  ```html
+    var routeTask = new RouteTask({
+         url: "https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World"
+      });
+  ```
+  
+  3 . Next you need a function that will add a point Graphic to the map. This will take paramaters **type(graphic type)** and **Point(location)**
+  
+  ```html
+    function addGraphic(type, point) {
+    var graphic = new Graphic({
+      symbol: {
+        type: "simple-marker",
+        color: (type === "start") ? "white" : "black",
+        size: "8px"
+      },
+      geometry: point
+    });
+    view.graphics.add(graphic);
+  }
+```
+ 4 . Now since the addGraphic function is set up we can have an onclick function added to the view. An onclikc function runs everytime the view is clicked. The function will get the location and call **addGraphic** to add a point and when a second point is added we want to get the route
+ 
+ ```html 
+    view.on("click", function(event){
+        if (view.graphics.length === 0) {
+          addGraphic("start", event.mapPoint);
+        } else if (view.graphics.length === 1) {
+          addGraphic("finish", event.mapPoint);
+          // Call the route service
+          getRoute();
+        } else {
+          view.graphics.removeAll();
+          addGraphic("start",event.mapPoint);
+        }
+      });
+ ```
+ 
+ 5 . The final step is to create and add the getroute function, this will get the locations of the two graphics and calculate a route. Once it does it will also plot out a line of the route.
+ 
+ ```html 
+   function getRoute() {
+        // Setup the route parameters
+        var routeParams = new RouteParameters({
+          stops: new FeatureSet({
+            features: view.graphics.toArray()
+          }),
+          returnDirections: true
+        });
+        // Get the route
+        routeTask.solve(routeParams).then(function(data) {
+          data.routeResults.forEach(function(result) {
+            result.route.symbol = {
+              type: "simple-line",
+              color: [255, 153, 0],
+              width: 3
+            };
+            view.graphics.add(result.route); 
+          });
+          
+        });
+      }
+   ```
+  
 
 <!--- Please use reference style images so that it is easier to update pictures later --->
 [dsllogo]: dsl_logo.png
