@@ -220,7 +220,7 @@ To start off with our mapping application we will need to add in a **Map** that 
       });
  ```
  
- 5 . The final step is to create and add the getroute function, this will get the locations of the two graphics and calculate a route. Once it does it will also plot out a line of the route.
+ 5 . The final step is to create and add the getroute function, this will get the locations of the two graphics and calculate a route. Once it does it will also plot out a line of the route on our view.
  
  ```html 
    function getRoute() {
@@ -244,9 +244,67 @@ To start off with our mapping application we will need to add in a **Map** that 
           
         });
       }
-   ```
+  ```
   
+  ### Using premade ArcGIS WebMaps as Views
+  
+   If you already have a published web hosted map that you created with ArcGIS, it can be used as your view. All you will need is the portal ID of the webmap. The ID can be found in the url when you are viewing it with ArcGIS mapviewer. For the purpose of the tutorial we will be using a map that shows the location of the MDGL at Brocku.
+   
+  1 . Add **WebMap** into the function headers 
+  
+  ```html 
+   require([
+    "esri/Map",
+    "esri/views/MapView",
+    "esri/widgets/BasemapToggle",
+    "esri/widgets/BasemapGallery",
+    "esri/Graphic",
+    "esri/tasks/RouteTask",
+    "esri/tasks/support/RouteParameters",
+    "esri/tasks/support/FeatureSet",
+    "esri/WebMap"
+  ], function(Map, MapView, BasemapToggle, BasemapGallery,Graphic, RouteTask, RouteParameters, FeatureSet,WebMap)
+  ```
+  2 . Next is to initialize the WebMap variable with the portal id
+  
+  ```html
+    var webmap = new WebMap({
+        portalItem: {
+          id: "9298ac5e19114e0f80845d9788c4951f"
+        }
+      });
+  ```
+  3 . Final Step is to change our view variable to instead use our WebMap instead of longitiude and latitiude 
+  
+  Change from this 
+  ```html
+       var view = new MapView({
+        container: "viewDiv",
+        map: map,
+        center: [-79.2477, 43.1176], // longitude, latitude
+        zoom: 15
+      });
+  ```
 
+  To this 
+  ```html
+    var view = new MapView({
+        container: "viewDiv",
+        map: webmap
+      });
+  ```
+  ![][Logo7]
+  
+  
+  ##Conclusion 
+    
+   This is just a basic map application that we setup and can be used to be part of a website wtih sizing changes. The ArcGis Javascript API allows you to do so much more such as custom widgets like POV calculators. If you want to learn more go to **https://developers.arcgis.com/javascript/latest/api-reference/**
+   
+   Also Here is the Final code for Reference If you had any Issues 
+   
+   ```html 
+    
+   ```
 <!--- Please use reference style images so that it is easier to update pictures later --->
 [dsllogo]: dsl_logo.png
 [Logo1]: LOGO1.png
@@ -255,3 +313,4 @@ To start off with our mapping application we will need to add in a **Map** that 
 [Logo4]: LOGO4.png
 [Logo5]: LOGO5.png
 [Logo6]: LOGO6.png
+[Logo7]: LOGO7.png
