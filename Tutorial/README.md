@@ -303,7 +303,115 @@ To start off with our mapping application we will need to add in a **Map** that 
    Also Here is the Final code for Reference If you had any Issues 
    
    ```html 
-    
+    <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>DSL Tutorial Web App</title>
+    <style>
+      html, body, #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.13/esri/css/main.css">
+<script src="https://js.arcgis.com/4.13/"></script>
+  <script>
+   require([
+    "esri/Map",
+    "esri/views/MapView",
+    "esri/widgets/BasemapToggle",
+    "esri/widgets/BasemapGallery",
+    "esri/Graphic",
+    "esri/tasks/RouteTask",
+    "esri/tasks/support/RouteParameters",
+    "esri/tasks/support/FeatureSet",
+    "esri/WebMap"
+  ], function(Map, MapView, BasemapToggle, BasemapGallery,Graphic, RouteTask, RouteParameters, FeatureSet,WebMap){
+     
+      var webmap = new WebMap({
+        portalItem: {
+          id: "9298ac5e19114e0f80845d9788c4951f"
+        }
+      });
+
+     var view = new MapView({
+        container: "viewDiv",
+        map: webmap
+      });
+
+      var basemapGallery = new BasemapGallery({
+       view: view,//remember that our mapview is under the variable view
+       source: {//our source object 
+         portal: {
+           url: "http://www.arcgis.com", //the arcgis url
+           useVectorBasemaps: true //tells the portal to use the vector basemap gallery
+         },
+        } 
+      });
+
+      view.ui.add(basemapGallery, "top-right");
+
+      var routeTask = new RouteTask({
+        url: "https://route.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World"
+      });
+
+      function addGraphic(type, point) {
+        var graphic = new Graphic({
+          symbol: {
+            type: "simple-marker",
+            color: (type === "start") ? "white" : "black",
+            size: "8px"
+          },
+          geometry: point
+        });
+        view.graphics.add(graphic);
+      }
+
+      view.on("click", function(event){
+        if (view.graphics.length === 0) {
+          addGraphic("start", event.mapPoint);
+        } else if (view.graphics.length === 1) {
+          addGraphic("finish", event.mapPoint);
+          // Call the route service
+          getRoute();
+        } else {
+          view.graphics.removeAll();
+          addGraphic("start",event.mapPoint);
+        }
+      })
+
+      function getRoute() {
+        // Setup the route parameters
+        var routeParams = new RouteParameters({
+          stops: new FeatureSet({
+            features: view.graphics.toArray()
+          }),
+          returnDirections: true
+        });
+        // Get the route
+        routeTask.solve(routeParams).then(function(data) {
+          data.routeResults.forEach(function(result) {
+            result.route.symbol = {
+              type: "simple-line",
+              color: [255, 153, 0],
+              width: 3
+            };
+            view.graphics.add(result.route); 
+          });
+
+        });
+      }
+ });
+ </script>
+  </head>
+  <body>
+    <div id="viewDiv"></div>
+  </body>
+</html>
    ```
 <!--- Please use reference style images so that it is easier to update pictures later --->
 [dsllogo]: dsl_logo.png
