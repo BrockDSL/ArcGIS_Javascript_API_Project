@@ -1,4 +1,4 @@
-![DSL Logo][dsllogo]\
+![DSL Logo][dsllogo]
 
 <img src="esrijs.png" height="100" width="100"/>
 
